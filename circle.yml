@@ -1,0 +1,15 @@
+dependencies:
+  pre:
+    - cp .env.development .env.test
+  post:
+    - npm run build
+
+test:
+  override:
+    - touch foobar
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git push dokku@$DEPLOY_HOST:hyreswebben_api master
