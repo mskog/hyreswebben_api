@@ -10,4 +10,4 @@ deployment:
   production:
     branch: master
     commands:
-      - git push dokku@$DEPLOY_HOST:hyreswebben_api master
+      - git push dokku@$DEPLOY_HOST:hyreswebben master
