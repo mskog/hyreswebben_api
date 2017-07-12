@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - cp .env.development .env.test
+    - cp .env.example .env.test
 
 test:
   override:
